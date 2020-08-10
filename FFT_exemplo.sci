@@ -4,7 +4,7 @@ xdel(winsid())  // Apaga as janelas gráficas abertas
 
 //
 // Taxa de amostragem
-ts = 10000  // [Hz]
+ts = 1000  // [Hz]
 //
 // Tempo discreto
 t = 0:1/ts:0.1  // [s]
@@ -19,7 +19,7 @@ freq_vec = ts*(0:(N/2))/N  // [Hz]
 freq_n = length(freq_vec)  // Número de frequências a serem exibidas
 //
 // f(t)
-ft = 10*sin(2*%pi*60*t)+5*sin(2*%pi*180*t)
+ft = 10*sin(2*%pi*50*t)+5*sin(2*%pi*200*t)
 //
 // Aplicando a transformada de Fourier no sinal f(t)
 Fw = fft(ft)
